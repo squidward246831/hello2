@@ -13,9 +13,12 @@
 
   <body>
 <h1>click to change color</h1>
-  <input type="color" id="color">
-  <input type="button" name="button" value="Click" onclick=changeColor()>
+<form  method="post">
 
+
+  <input type="color" id="color">
+  <input type="button" name="button" value="Click" onclick= "changeColor()" >
+</form>
 <script>
   function changeColor() {
     let color = document.getElementByid('color').value;

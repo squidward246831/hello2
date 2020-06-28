@@ -2,6 +2,7 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles/mainstlyes.css">
     <link rel="stylesheet" href="styles/buttonstyles.css">
     <title>color</title>
@@ -12,12 +13,12 @@
 
   <body>
 <h1>click to change color</h1>
-  <input type="color" name="color">
+  <input type="color" id="color">
   <input type="button" name="button" value="Click" onclick="changeColor">
 
-<script type="text/javascript">
+<script>
   function changeColor() {
-    let color = document.getElementByName('color').value;
+    let color = document.getElementByid('color').value;
     document.body.style.backgroundColor = color;
   }
 </script>

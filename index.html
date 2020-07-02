@@ -1,32 +1,29 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles/mainstlyes.css">
-    <link rel="stylesheet" href="styles/buttonstyles.css">
-    <title>color</title>
+<html>
+<head>
+
+	<title>change color</title>
 <style>
-
+body{
+	background-color: color;
+}
 </style>
-  </head>
-
-  <body>
-<h1>click to change color</h1>
-
-
-
-  <input type="color" id="color" value="color change color">
-  <input type="button" id="buttoncolor" value="click me now"
-  onclick= "changeColor()" >
-
+</head>
+<body>
+<form>
+<input type="color" id="color">
+<input type="button" name="button" value="click to change color" onclick="changeColor()">
+</form>
+<!--internal script-->
 
 <script>
-  function changeColor() {
-    let color = document.getElementByid( color ).value;
-    document.body.style.background.Color = color;
-  }
+
+	function changeColor() {
+
+		let color = document.getElementByid('color').value;
+		document.body.style.backgroundColor = color;
+	}
 </script>
 
-  </body>
+</body>
 </html>

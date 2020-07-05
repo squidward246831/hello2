@@ -5,7 +5,7 @@
 	<title>change color</title>
 <style>
 body{
-	background-color: color;
+	background-color: {bground};
 }
 input{
   background-color: black;
@@ -15,7 +15,7 @@ input{
 <body>
 
 <input type="color" id="color" value="click">
-<button type="button" name="button">click</button>
+<button type="button" name="button">click me</button>
 
 <!--internal script-->
 
@@ -23,8 +23,8 @@ input{
 
 	function changeColor() {
 
-		let color = document.getElementByid('color').value;
-		document.body.style.backgroundColor = color;
+		let bground = document.getElementByid('color').value;
+		document.body.style.backgroundColor = bground;
 	}
 </script>
 
